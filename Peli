@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&family=Source+Code+Pro:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  .container {
+    padding: 20px;
+    background: linear-gradient(45deg, #1a1a2e, #16213e);
+    border-radius: 12px;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .title {
+    font-family: 'Chakra Petch', sans-serif;
+    background: linear-gradient(to right, #ff66d9, #66ffff, #ff9966);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 0 0 10px rgba(255, 102, 217, 0.5);
+    font-weight: 700;
+  }
+
+  .table-wrapper {
+    border: 3px solid #ff66d9;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 30px rgba(255, 102, 217, 0.4);
+  }
+
+  .anime-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 13px;
+  }
+
+  .anime-table th {
+    background: linear-gradient(45deg, #2a1a4a, #4a1a2a);
+    color: #fff;
+    padding: 10px;
+    text-align: left;
+    font-family: 'Chakra Petch', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 13px;
+    white-space: nowrap;
+  }
+
+  .th-content {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .anime-table tr:nth-child(odd) {
+    background: linear-gradient(45deg, #2a1a3a, #1a2a3a);
+  }
+
+  .anime-table tr:nth-child(even) {
+    background: linear-gradient(45deg, #1a2a4a, #2a1a2a);
+  }
+
+  .anime-table td {
+    padding: 8px 10px;
+    color: #fff;
+  }
+
+  .anime-table tr:hover {
+    background: linear-gradient(45deg, #3a1a4a, #4a1a3a);
+    transition: background-color 0.3s ease;
+  }
+
+  .year-cell {
+    color: #66ffff;
+  }
+
+  .revenue-cell {
+    color: #ff9966;
+  }
+
+  .director-cell {
+    color: #99ff99;
+  }
+
+  .studio-cell {
+    color: #ff99cc;
+  }
+
+  .table-footer {
+    background: linear-gradient(45deg, #2a1a4a, #4a1a2a);
+    padding: 10px;
+    text-align: center;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 11px;
+    color: #ff99cc;
+  }
+
+  .author {
+    font-family: 'Chakra Petch', sans-serif;
+    color: #66ffff;
+    font-size: 12px;
+    text-shadow: 0 0 5px rgba(102, 255, 255, 0.5);
+    margin-top: 8px;
+    letter-spacing: 1px;
+  }
+
+  .emoji {
+    font-size: 14px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1 class="title">🐰 Películas de Anime Más Taquilleras 💗</h1>
+  
+  <div class="table-wrapper">
+    <table class="anime-table">
+      <thead>
+        <tr>
+          <th><div class="th-content"><span class="emoji">🎬</span> Título</div></th>
+          <th><div class="th-content"><span class="emoji">📅</span> Año</div></th>
+          <th><div class="th-content"><span class="emoji">💰</span> Recaudación</div></th>
+          <th><div class="th-content"><span class="emoji">🎨</span> Director</div></th>
+          <th><div class="th-content"><span class="emoji">🏢</span> Estudio</div></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Suzume</td>
+          <td class="year-cell">2022</td>
+          <td class="revenue-cell">305.6 M</td>
+          <td class="director-cell">Makoto Shinkai</td>
+          <td class="studio-cell">CoMix Wave Films</td>
+        </tr>
+        <tr>
+          <td>The First Slam Dunk</td>
+          <td class="year-cell">2022</td>
+          <td class="revenue-cell">254.8 M</td>
+          <td class="director-cell">Takehiko Inoue</td>
+          <td class="studio-cell">Toei Animation</td>
+        </tr>
+        <tr>
+          <td>One Piece Film: Red</td>
+          <td class="year-cell">2022</td>
+          <td class="revenue-cell">249.8 M</td>
+          <td class="director-cell">Gorō Taniguchi</td>
+          <td class="studio-cell">Toei Animation</td>
+        </tr>
+        <tr>
+          <td>The Boy and the Heron</td>
+          <td class="year-cell">2023</td>
+          <td class="revenue-cell">167.3 M</td>
+          <td class="director-cell">Hayao Miyazaki</td>
+          <td class="studio-cell">Studio Ghibli</td>
+        </tr>
+        <tr>
+          <td>Detective Conan: Black Iron Submarine</td>
+          <td class="year-cell">2023</td>
+          <td class="revenue-cell">132.4 M</td>
+          <td class="director-cell">Yuzuru Tachikawa</td>
+          <td class="studio-cell">TMS Entertainment</td>
+        </tr>
+        <tr>
+          <td>Demon Slayer: To the Swordsmith Village</td>
+          <td class="year-cell">2023</td>
+          <td class="revenue-cell">86.3 M</td>
+          <td class="director-cell">Haruo Sotozaki</td>
+          <td class="studio-cell">ufotable</td>
+        </tr>
+        <tr>
+          <td>Detective Conan: Million-Dollar Pentagram</td>
+          <td class="year-cell">2024</td>
+          <td class="revenue-cell">34.2 M</td>
+          <td class="director-cell">Yuzuru Tachikawa</td>
+          <td class="studio-cell">TMS Entertainment</td>
+        </tr>
+        <tr>
+          <td>Monster Strike: The Movie VI</td>
+          <td class="year-cell">2024</td>
+          <td class="revenue-cell">8.7 M</td>
+          <td class="director-cell">Kobun Shizuno</td>
+          <td class="studio-cell">XFlag Pictures</td>
+        </tr>
+        <tr>
+          <td>Kimi no Iro</td>
+          <td class="year-cell">2024</td>
+          <td class="revenue-cell">7.1 M</td>
+          <td class="director-cell">Naoko Yamada</td>
+          <td class="studio-cell">Science SARU</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="5" class="table-footer">
+            Fuentes: Box Office Mojo, The Numbers, Japanese Box Office Database (JBDB)
+            <div class="author">✨ Elaborado por: Mariana Rocio Linares Olivera ✨</div>
+          </td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+</div>
+</body>
+</html>
